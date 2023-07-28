@@ -1,0 +1,316 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/righteous/v14/1cXxaUPXBpj2rGoU7C9WiHGF.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/cantarell/v17/B50NF7ZDq37KMUvlO015jKJr.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    font-family: 'Righteous';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .hcontainer a {
+        font-size: 1.25rem !important;
+    }
+    .mainPage h1 {
+        font-size: 4rem !important;
+    }
+    .mainPage h2 {
+        font-size: 2rem !important;
+    }
+    .article1 h2, .article2 h2 {
+        font-size: 2.5rem !important;
+    }
+    .article1 h3 {
+        font-size: 1.5rem !important;
+    }
+    .article1 p {
+        font-size: 1.2rem !important;
+    }
+    .article1 img {
+        /* to difficult to position on mobile */
+        display: none;
+    }
+    .library h3 {
+        font-size: 1.5rem !important;
+}
+}
+.trans1 {
+    background-color:#0575ca;
+    opacity: 0.95;
+    display: flex;
+    width: 100%;
+    border-bottom-style:solid;
+    border-color: #FFF;
+
+}
+.headnav {
+    display: flex;
+    flex-direction: column;
+    background-color:#065fa3;
+    background-image: url('https://img.rawpixel.com/private/static/images/website/2022-05/upwk62083661-wikimedia-image-kowf3zhq.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=d13a95fe5b582b7e2723de176c9c22c5');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 100%;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+}
+
+.hcontainer a {
+    text-decoration: none;
+    color: #FFFF;
+    font-family: 'Righteous';
+    font-size: 2rem;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    transition: box-shadow 0.10s ease-in;
+}
+
+.hcontainer a:hover {
+    -webkit-box-shadow: 0px 3px 9px 12px rgba(255, 255, 255, 1); 
+    box-shadow: 0px 3px 9px 12px rgba(255, 255, 255, 1);
+}
+
+.hcontainer li {
+    list-style: none;
+    padding: 2% 5% 2% 5%;
+}
+
+.mainPage {
+    background-image: url('https://blog.padi.com/wp-content/uploads/2023/05/Smaller-WOD-Appeal-Shark-Background-Image-ASSET-ONLY-scaled.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trans2 {
+    background-color:#035797;
+    opacity: 0.80;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+    padding: 25%;
+    border-bottom-style: solid;
+    border-color: #FFF;
+}
+
+.mainPage h1 {
+    font-size: 8rem;
+    text-align: center;
+    margin: 0px;
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.mainPage h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0px;
+    color: #FFF;
+}
+
+.article1 {
+    background-color:#023d69;
+    border-bottom-style: solid;
+    border-color: #FFF;
+    display: flex;
+}
+
+.gws1 {
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.article1 img {
+    max-height: 35rem;
+    margin-left: 5%;
+    border-style: solid;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.article1 img:hover {
+    -webkit-box-shadow: 0px 3px 9px 12px rgba(255, 255, 255, 1); 
+    box-shadow: 0px 3px 9px 12px rgba(255, 255, 255, 1);
+    filter: grayscale(1);
+}
+
+.article1, .article2 {
+    margin: 0px;
+    padding: 5%;
+    color: #FFFF;
+    margin: 0px;
+    text-align: left;
+}
+
+.article1 a {
+    color: #FFF;
+}
+
+.article1 h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.article1 h2, .article2 h2 {
+    font-weight: lighter;
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+.article1 p {
+    font-family: 'Cantarell';
+    font-size: 1.5rem;
+}
+
+.article2 {
+    background-color: #002A4C;
+    border-bottom-style: solid;
+    border-color: #FFF;
+}
+
+.library {
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.library div {
+    border-style: solid;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.library a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.library h3 {
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+.gws2:hover {
+    background-image: url('https://files.worldwildlife.org/wwfcmsprod/images/Great_White_Shark_Circle_and_Hero_Image/story_full_width/3aiph9tm4w_Species_Great_White_Shark_WWF_Carlos_Aguilera.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: 40%;
+}
+.tiger:hover {
+    background-image: url('https://maralliance.org/wp-content/uploads/2022/05/tiger-shark-1-scaled.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 40%;
+}
+
+.basking:hover {
+    background-image: url('https://ichef.bbci.co.uk/images/ic/1920x1080/p0309kss.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 40%;
+}
+
+.thresher:hover {
+    background-image: url('https://divemagazine.com/wp-content/uploads/wide-eyed-whiptailed-title-thresher.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
+}
+
+.discover:hover {
+    background-image: url('https://t4.ftcdn.net/jpg/00/78/79/89/360_F_78798921_9eFEAtTBK3EbR8rzHMtTg7iRi52BemYe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: #051B32;
+    background-image: url('https://rare-gallery.com/thumbs/5420570-sea-ocean-water-open-sea-blue-ripple-blue-sea-blue-water-deep-water-deep-sumbre-from-above-type-ready-text-minimal-monochrome-green-public-domain-images.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fcontainer {
+    display: grid;
+    justify-content: center;
+    grid-gap: 0rem;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+    background-color: #051B32;
+}
+
+.fcontainer a {
+    text-decoration: none;
+    color: #FFFF;
+    font-family: 'Righteous';
+}
+
+.fcontainer li {
+    list-style: none;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+
+.copyright {
+    color: #8d8888;
+    align-self: end;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0% 0% 2% 4%;
+}
+
+.social a:hover {
+    transform: scale(1.25);
+}
+
+.trans3 {
+    background-color: #051B32;
+    opacity: 0.8;
+}
